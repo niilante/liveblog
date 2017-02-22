@@ -124,7 +124,7 @@ define([
                 SirTrevor.EventBus.on('block:create:existing', removeEmptyBlockExceptTheBlock);
                 SirTrevor.EventBus.on('block:create:new', removeEmptyBlockExceptTheBlock);
             },
-            blockTypes: ['Text', 'Image', 'Embed', 'Quote', 'Comment'],
+            blockTypes: ['Text', 'Image', 'Embed', 'Quote', 'Comment', 'RemoteImage'],
             // render a default block when the editor is loaded
             defaultType: 'Text',
             transform: {

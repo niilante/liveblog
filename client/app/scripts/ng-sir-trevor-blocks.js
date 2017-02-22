@@ -417,6 +417,20 @@ define([
             };
             SirTrevor.DEFAULTS.Block.upload_options = upload_options;
             SirTrevor.Locales.en.general.upload = 'Select from folder';
+
+            SirTrevor.Blocks.RemoteImage =  SirTrevor.Block.extend({
+                type: 'remote-image',
+                title: function() {
+                    return 'Remote Image';
+                },
+                droppable: true,
+                uploadable: true,
+                icon_name: 'image',
+                isEmpty: function() {
+                    return true;
+                }
+            });
+
             SirTrevor.Blocks.Image =  SirTrevor.Block.extend({
                 type: 'image',
                 title: function() {
